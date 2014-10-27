@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/***********************************
+        Baseline Element
+***********************************/
+picture, img {
+    max-width: 100%;
+    width: 600px;
+    padding-right: 2px;   
+}
+
+.main {
+    list-style: none;
+}
+
+ul {
+ margin: 20px auto;
+ width: 90%;    
+}
+h1 {
+    color: #606;
+    font-family: "Dosis", serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/***********************************
+        Header
+***********************************/
+
+/***********************************
+        Footer
+***********************************/
+.footer {
+    margin: 10px auto;
+    color: #606;
+    text-align: center;
+    clear: both;
+    font-family: "Dosis", serif;
+}
+/***********************************
+        Media Queries
+***********************************/
+
+@media all and (max-width: 600px){ 
+    picture {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 601px){
+    picture {
+        width: 50%;
+        float: left;
+    }
+    h1 {
+        color: #f0f;
+        font-size: 3rem;    
+    }
+    .footer {
+        color: #f0f;
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (min-width: 1025px){
+    picture {
+        width: 33%;
+        float: left;
+    }
+    h1 {
+        color: #f9f;
+        font-size: 5rem;    
+    }
+     .footer {
+        color: #f9f;
+        font-size: 2.5rem;
+    }
+}
